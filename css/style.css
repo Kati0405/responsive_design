@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.p-big {
+    font-size: 1.3em;
+    padding: 4vw;
+    font-weight: lighter;
+    text-align: center;
+}
+
+strong {
+    font-weight: 400;
+    color: #E2BA7B;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h1, h2, h4, h5, h6 {
+    font-weight: normal;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+h2 {
+   margin: 0 10px;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+em {
+    color: #808080;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* mobile */
+
+header {
+    position: relative;
+    background-image: url(../img/wheat.jpg);
+    background-color: #b9b1b114;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2vh 0;
+}
+
+.hidden {
+    width: 20vw;
+    height: 100%;
+    display: none;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 1vh  0;
+}
+
+.nav-item {
+    text-align: center;
+    width: 33.333%;
+}
+
+.nav-item a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+}
+
+.header-info {
+    padding: 5vh 2vh;
+}
+
+.btn-learn-more {
+    text-align: center;
+    padding: 5vh;
+}
+
+.btn-learn-more button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-left: 2px solid #65AA44;
+    border-right: 2px solid #65AA44;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.green-border {
+    border-bottom: 2px solid #65AA44;
+    border-left: 12px solid #65AA44;
+}
+
+.green-text {
+    color: #65AA44;
+}
+
+ main section {
+    padding: 2vw 4vw;
+}
+
+.structure-section {
+    background-color: #b9b1b114;
+}
+
+.services {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-item h3::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    vertical-align: middle;
+}
+
+.services-item:nth-child(1) h3::before {
+    background-image: url(../img/icon/car.png);
+}
+
+.services-item:nth-child(2) h3::before {
+    background-image: url(../img/icon/cart.png);
+}
+
+.services-item:nth-child(3) h3::before {
+    background-image: url(../img/icon/dollar.png);
+}
+
+.services-item:nth-child(4) h3::before {
+    background-image: url(../img/icon/pie.png);
+}
+
+.services-item:nth-child(5) h3::before {
+    background-image: url(../img/icon/planet.png);
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits li {
+    padding-left: 2em; 
+    text-indent: -0.7em;
+}
+
+.benefits li::before {
+    content: "• ";
+    font-weight: bold;
+    color: #E2BA7B;
+}
+
+.news-card {
+    display: flex;
+    margin: 2vh 0;
+    flex-direction: row;
+    box-shadow: 0px 0px 12px 0px #D3D3D3;
+}
+
+.news-img {
+    width: 25%;
+    margin: 10px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.news-img img{
+    height: 100%;
+    max-width: 100%;
+}
+
+
+.news-card:nth-child(1) .news-img {
+    background-image: url(../img/wheat-1.jpg);
+}
+
+.news-card:nth-child(2) .news-img {
+    background-image: url(../img/tax.png);
+}
+
+.news-card:nth-child(3) .news-img {
+    background-image: url(../img/wheat-2.jpg);
+}
+
+
+.news-description {
+    padding: 2vh 3vw;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+.footer-section-header {
+    width: 35%;
+}
+
+.footer-section-description {
+    width: 65%;
+    margin: 0;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.social-media img {
+    width: 6vw;
+    height: fit-content;
+    margin: 7px;
+}
+
+.prices-section {
+    display: none;
+}
+
+/* tablet */
+
+@media screen and (min-width:768px) {
+
+    #main-nav {
+        display: flex;
+        justify-content: end;
+    }
+
+    .main-nav {
+        width: 40%;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .header-info-wrapper {
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-info {
+        width: 62vw;
+    }
+
+    .p-big, .btn-learn-more {
+        text-align: left;
+        padding: 0;
+    }
+
+    .structure-description-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .structure-description {
+        flex: 0 0 30%;
+    }
+
+    .social-media img {
+        width: 3vw;
+    }
+
+    .prices-section {
+        display: block;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 2vh;
+    }
+
+    td, th {
+        text-align: center;
+        padding: 5px;
+        border: 2px solid #E2BA7B;
+    }
+    
+
+}
+/* desktop */
+
+@media screen and (min-width:992px) {
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        .news-container {
+            display: flex;
+            flex-direction: row;
+    }
+
+        .news-card {
+            margin-right: 2vw;
+    }
+
+        .news-card:last-child {
+            margin-right: 0;
+    }
+        .news-description {
+            justify-content: flex-start;
+            padding: 10px 5px;
+    }
+
+        .news-description h4, .news-description p {
+            margin: 0;
+    }
+        .news-description h4, .news-description em, .news-description p {
+            font-size: 1vw;
+    }
+
+
+    footer {
+        flex-direction: row;
+    }
+
+    .social-media {
+        flex-direction: column;
+        padding-left: 3vw;
+    }
+
+    .social-media img {
+        width: 2vw;
+    }
+
+    .footer-section-header {
+        width: 40%;
+        font-size: 1.2vw;
+        margin-right: 10px;
+    }
+
+    .footer-section-description {
+        width: 60%;
+        font-size: 1.094vw;
+    }
+
+}
